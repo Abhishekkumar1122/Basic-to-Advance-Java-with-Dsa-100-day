@@ -1,0 +1,58 @@
+  //                                                                                 ------Java------
+                                                                                              
+
+
+//-------------------------------------------------->> Here We Learn how to print any thing in java.
+
+// class firstclass {
+// // public static void main(String args[]){
+// //     System.out.println("hello world !");
+// // }
+// // }
+
+//---------------------------------------------->> Here We Learn how to take intger input from user.
+
+import java.util.Scanner; 
+// class firstclass {
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int user_value  = sc.nextInt();
+//         System.out.println(user_value);
+//  }
+//}
+
+
+//------------------------------------------------>> Q: Write a Java program to calculate the sum and product of two given number.
+
+import java.util.Scanner; 
+class firstclass {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Two number : ");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int sum = (num1 + num2);
+        int product = num1 * num2;
+        System.out.println("Sum :" + sum);
+        System.out.println("Product :" + product);
+    }
+}
+
+
+//---------------------------------------------->> Q: Write a Java program to accept two number from the user and calculate the average.
+
+import java.util.*;
+public firstclass {
+    public static void main(String args[])
+    {
+       double a,b,sum=0,avg=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the First No:");
+        a=sc.nextDouble();
+        System.out.println("Enter the Second No:")
+        b=sc.nextDouble();
+        sum=a+b;
+        avg=sum/2;
+        System.out.println("Average="+avg);
+    }
+}
