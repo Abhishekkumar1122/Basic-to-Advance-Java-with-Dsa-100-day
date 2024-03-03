@@ -1,0 +1,193 @@
+In Java, identifiers are used for identification purposes. Java Identifiers can be a class name, method name, variable name, or label. 
+Example of Java Identifiers
+
+public class  Day_3
+{
+    public static void main(String[] args)
+    {
+        int a = 20;
+        char ch = "A";
+    }
+}
+
+------------------------------------------->>
+
+Day_2  : class name.
+main   : method name.
+String : predefined class name.
+args   : variable name.
+a      : variable name.
+ch     : variable name.
+
+
+
+
+
+------------------------------------------->>
+
+What are the Java Operators?
+Operators in Java are the symbols used for performing specific operations in Java. Operators make tasks like addition, multiplication, etc which look easy although the implementation of these tasks is quite complex.
+
+Types of Operators in Java
+There are multiple types of operators in Java all are mentioned below:
+
+Arithmetic Operators
+Unary Operators
+Assignment Operator
+Relational Operators
+Logical Operators
+Ternary Operator
+Bitwise Operators
+Shift Operators
+instance of operator
+
+
+1.Arithmetic Operators
+* : Multiplication
+/ : Division
+% : Modulo
++ : Addition
+– : Subtraction
+
+import java.io.*;
+class Day_3 {
+    public static void main (String[] args) {
+        int a = 10;
+        int b = 3;
+       
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+           
+    }
+}
+
+
+2.Unary Operators
+++ : Increment operator
+–– : Decrement operator
+!  : Logical not operator
+
+
+import java.io.*;
+class Day_3 {
+    
+    public static void main(String[] args)
+    {
+       
+        int a = 10;
+        int b = 10;
+ 
+        // Using uniary operators
+        System.out.println("Postincrement : " + (a++));
+        System.out.println("Preincrement : " + (++a));
+ 
+        System.out.println("Postdecrement : " + (b--));
+        System.out.println("Predecrement : " + (--b));
+    }
+}
+
+
+3.Assignment Operator
++=, for adding the left operand with the right operand and then assigning it to the variable on the left.
+-=, for subtracting the right operand from the left operand and then assigning it to the variable on the left.
+*=, for multiplying the left operand with the right operand and then assigning it to the variable on the left.
+/=, for dividing the left operand by the right operand and then assigning it to the variable on the left.
+%=, for assigning the modulo of the left operand by the right operand and then assigning it to the variable on the left.
+// Java Program to implement
+// Assignment Operators
+import java.io.*;
+
+
+class  Day_3 { 
+
+	public static void main(String[] args)
+	{
+		
+		int f = 7;
+		System.out.println("f += 3: " + (f += 3));
+		System.out.println("f -= 2: " + (f -= 2));
+		System.out.println("f *= 4: " + (f *= 4));
+		System.out.println("f /= 3: " + (f /= 3));
+		System.out.println("f %= 2: " + (f %= 2));
+
+	}
+}
+
+
+ 4.Relational Operators
+
+==   Equal to returns true if the left-hand side is equal to the right-hand side.
+!=   Not Equal to returns true if the left-hand side is not equal to the right-hand side.
+<    less than: returns true if the left-hand side is less than the right-hand side.
+<=   less than or equal to returns true if the left-hand side is less than or equal to the right-hand side.
+>    Greater than: returns true if the left-hand side is greater than the right-hand side.
+>=   Greater than or equal to returns true if the left-hand side is greater than or equal to the right-hand side.
+
+
+import java.io.*;
+ 
+class Day_3 {
+   
+    public static void main(String[] args)
+    {
+       
+        int a = 10;
+        int b = 3;
+        int c = 5;
+ 
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+        System.out.println("a == c: " + (a == c));
+        System.out.println("a != c: " + (a != c));
+    }
+
+}
+
+5.Logical Operators
+
+&&, Logical AND: returns true when both conditions are true.
+||, Logical OR: returns true if at least one condition is true.
+!, Logical NOT: returns true when a condition is false and vice-versa
+
+
+
+import java.io.*;
+
+class Day_3 {
+
+    public static void main (String[] args) {
+        
+        boolean x = true;
+        boolean y = false;
+       
+        System.out.println("x && y: " + (x && y));
+        System.out.println("x || y: " + (x || y));
+        System.out.println("!x: " + (!x));
+    }
+}
+
+6.Ternary operator
+
+condition ? if true : if false
+
+//-------------------------------------->>
+
+public class  Day_3_operators {
+    public static void main(String[] args)
+    {
+        int a = 20, b = 10, c = 30, result;
+ 
+        result
+            = ((a > b) ? (a > c) ? a : c : (b > c) ? b : c);
+        System.out.println("Max of three numbers = "
+                           + result);
+    }
+}
+
+
+
